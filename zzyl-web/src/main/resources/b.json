@@ -1,0 +1,896 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": [
+    {
+      "name": "工作台",
+      "path": "dashboard",
+      "component": null,
+      "redirect": "/工作台",
+      "hidden": null,
+      "children": [
+        {
+          "name": "工作台",
+          "path": "/dashboard/base",
+          "component": null,
+          "redirect": "/工作台/工作台",
+          "hidden": null,
+          "children": null,
+          "meta": {
+            "title": "工作台",
+            "icon": "hlrw",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "工作台",
+        "icon": "hlrw",
+        "roles": null
+      }
+    },
+    {
+      "name": "郑州126",
+      "path": "/zz126",
+      "component": null,
+      "redirect": "/郑州126",
+      "hidden": null,
+      "children": [
+        {
+          "name": "子菜单-v2",
+          "path": "//zz126/children",
+          "component": null,
+          "redirect": "/郑州126/子菜单-v2",
+          "hidden": null,
+          "children": null,
+          "meta": {
+            "title": "子菜单-v2",
+            "icon": "",
+            "roles": null
+          }
+        },
+        {
+          "name": "子菜单-v3",
+          "path": "//zz126/sdf",
+          "component": null,
+          "redirect": "/郑州126/子菜单-v3",
+          "hidden": null,
+          "children": null,
+          "meta": {
+            "title": "子菜单-v3",
+            "icon": "",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "郑州126",
+        "icon": "",
+        "roles": null
+      }
+    },
+    {
+      "name": "来访管理",
+      "path": "appointment",
+      "component": null,
+      "redirect": "/来访管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "预约来访",
+          "path": "/appointment/yylf",
+          "component": null,
+          "redirect": "/来访管理/预约来访",
+          "hidden": null,
+          "children": [
+            {
+              "name": "预约登记",
+              "path": "/appointment/subscribe",
+              "component": null,
+              "redirect": "/预约来访/预约登记",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "预约登记",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "来访登记",
+              "path": "/appointment/comeVisit",
+              "component": null,
+              "redirect": "/预约来访/来访登记",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "来访登记",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "预约来访",
+            "icon": "cwgl-sei",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "来访管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "入退管理",
+      "path": "enterQuit",
+      "component": null,
+      "redirect": "/入退管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "入住管理",
+          "path": "/enterQuit/enter",
+          "component": null,
+          "redirect": "/入退管理/入住管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "入住办理",
+              "path": "/enterQuit/enterManage",
+              "component": null,
+              "redirect": "/入住管理/入住办理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "入住办理",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "入住管理",
+            "icon": "icon",
+            "roles": null
+          }
+        },
+        {
+          "name": "退住管理",
+          "path": "/enterQuit/quit",
+          "component": null,
+          "redirect": "/入退管理/退住管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "退住办理",
+              "path": "/enterQuit/quitManage",
+              "component": null,
+              "redirect": "/退住管理/退住办理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "退住办理",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "退住管理",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "入退管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "在住管理",
+      "path": "liveIn",
+      "component": null,
+      "redirect": "/在住管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "合同管理",
+          "path": "/liveIn/htgl",
+          "component": null,
+          "redirect": "/在住管理/合同管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "合同跟踪",
+              "path": "/liveIn/trackAfter",
+              "component": null,
+              "redirect": "/合同管理/合同跟踪",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "合同跟踪",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "合同管理",
+            "icon": "icon",
+            "roles": null
+          }
+        },
+        {
+          "name": "床位管理",
+          "path": "/liveIn/cwgl",
+          "component": null,
+          "redirect": "/在住管理/床位管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "床位房型",
+              "path": "/liveIn/houseType",
+              "component": null,
+              "redirect": "/床位管理/床位房型",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "床位房型",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "智能床位",
+              "path": "/liveIn/smartBed",
+              "component": null,
+              "redirect": "/床位管理/智能床位",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "智能床位",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "房型设置",
+              "path": "/liveIn/houseSet",
+              "component": null,
+              "redirect": "/床位管理/房型设置",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "房型设置",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "床位管理",
+            "icon": "icon",
+            "roles": null
+          }
+        },
+        {
+          "name": "请假管理",
+          "path": "/liveIn/qjgl",
+          "component": null,
+          "redirect": "/在住管理/请假管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "请假管理",
+              "path": "/liveIn/qjgl",
+              "component": null,
+              "redirect": "/请假管理/请假管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "请假管理",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "请假管理",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "在住管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "服务管理",
+      "path": "serve",
+      "component": null,
+      "redirect": "/服务管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "护理计划",
+          "path": "/serve/hljh-1",
+          "component": null,
+          "redirect": "/服务管理/护理计划",
+          "hidden": null,
+          "children": [
+            {
+              "name": "护理等级",
+              "path": "/serve/grade",
+              "component": null,
+              "redirect": "/护理计划/护理等级",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "护理等级",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "护理计划",
+              "path": "/serve/nursePlan",
+              "component": null,
+              "redirect": "/护理计划/护理计划",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "护理计划",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "护理项目",
+              "path": "/serve/nurseProject",
+              "component": null,
+              "redirect": "/护理计划/护理项目",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "护理项目",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "护理计划",
+            "icon": "icon",
+            "roles": null
+          }
+        },
+        {
+          "name": "护理任务",
+          "path": "/serve/hlrw",
+          "component": null,
+          "redirect": "/服务管理/护理任务",
+          "hidden": null,
+          "children": [
+            {
+              "name": "负责老人",
+              "path": "/serve/fzlr",
+              "component": null,
+              "redirect": "/护理任务/负责老人",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "负责老人",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "任务安排",
+              "path": "/serve/rwap",
+              "component": null,
+              "redirect": "/护理任务/任务安排",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "任务安排",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "护理任务",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "服务管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "订单管理",
+      "path": "order",
+      "component": null,
+      "redirect": "/订单管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "订单管理",
+          "path": "/order/order",
+          "component": null,
+          "redirect": "/订单管理/订单管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "订单管理",
+              "path": "/order/olist",
+              "component": null,
+              "redirect": "/订单管理/订单管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "订单管理",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "退款管理",
+              "path": "/order/refund",
+              "component": null,
+              "redirect": "/订单管理/退款管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "退款管理",
+                "icon": "cwgl-sei",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "订单管理",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "订单管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "财务管理",
+      "path": "finance",
+      "component": null,
+      "redirect": "/财务管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "账单管理",
+          "path": "/finance/bill",
+          "component": null,
+          "redirect": "/财务管理/账单管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "入账列表",
+              "path": "/finance/enterAccount",
+              "component": null,
+              "redirect": "/账单管理/入账列表",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "入账列表",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "欠费老人",
+              "path": "/finance/arrearage",
+              "component": null,
+              "redirect": "/账单管理/欠费老人",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "欠费老人",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "账单管理",
+            "icon": "icon",
+            "roles": null
+          }
+        },
+        {
+          "name": "预存管理",
+          "path": "/finance/prestore",
+          "component": null,
+          "redirect": "/财务管理/预存管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "预缴款充值",
+              "path": "/finance/topUp",
+              "component": null,
+              "redirect": "/预存管理/预缴款充值",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "预缴款充值",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "余额查询",
+              "path": "/finance/balance",
+              "component": null,
+              "redirect": "/预存管理/余额查询",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "余额查询",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "预存管理",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "财务管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "客户管理",
+      "path": "client",
+      "component": null,
+      "redirect": "/客户管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "客户信息",
+          "path": "/client/khxx",
+          "component": null,
+          "redirect": "/客户管理/客户信息",
+          "hidden": null,
+          "children": [
+            {
+              "name": "客户信息",
+              "path": "/client/list",
+              "component": null,
+              "redirect": "/客户信息/客户信息",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "客户信息",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "客户信息",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "客户管理",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "权限管理",
+      "path": "permission",
+      "component": null,
+      "redirect": "/权限管理",
+      "hidden": null,
+      "children": [
+        {
+          "name": "用户管理",
+          "path": "/permission/user",
+          "component": null,
+          "redirect": "/权限管理/用户管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "用户信息",
+              "path": "/permission/user",
+              "component": null,
+              "redirect": "/用户管理/用户信息",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "用户信息",
+                "icon": "user",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "用户管理",
+            "icon": "",
+            "roles": null
+          }
+        },
+        {
+          "name": "权限配置",
+          "path": "/permission/permission",
+          "component": null,
+          "redirect": "/权限管理/权限配置",
+          "hidden": null,
+          "children": [
+            {
+              "name": "角色管理",
+              "path": "/permission/role",
+              "component": null,
+              "redirect": "/权限配置/角色管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "角色管理",
+                "icon": "component",
+                "roles": null
+              }
+            },
+            {
+              "name": "菜单管理",
+              "path": "/permission/menu",
+              "component": null,
+              "redirect": "/权限配置/菜单管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "菜单管理",
+                "icon": "user",
+                "roles": null
+              }
+            },
+            {
+              "name": "部门管理",
+              "path": "/permission/dept",
+              "component": null,
+              "redirect": "/权限配置/部门管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "部门管理",
+                "icon": "form",
+                "roles": null
+              }
+            },
+            {
+              "name": "职位管理",
+              "path": "/permission/post",
+              "component": null,
+              "redirect": "/权限配置/职位管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "职位管理",
+                "icon": "chart",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "权限配置",
+            "icon": "component",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "权限管理",
+        "icon": "user",
+        "roles": null
+      }
+    },
+    {
+      "name": "协同工作",
+      "path": "active",
+      "component": null,
+      "redirect": "/协同工作",
+      "hidden": null,
+      "children": [
+        {
+          "name": "协同工作",
+          "path": "/active/xtgz",
+          "component": null,
+          "redirect": "/协同工作/协同工作",
+          "hidden": null,
+          "children": [
+            {
+              "name": "我的待办",
+              "path": "/active/backlogAfter",
+              "component": null,
+              "redirect": "/协同工作/我的待办",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "我的待办",
+                "icon": "icon",
+                "roles": null
+              }
+            },
+            {
+              "name": "我的申请",
+              "path": "/active/apply",
+              "component": null,
+              "redirect": "/协同工作/我的申请",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "我的申请",
+                "icon": "icon",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "协同工作",
+            "icon": "icon",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "协同工作",
+        "icon": "icon",
+        "roles": null
+      }
+    },
+    {
+      "name": "智能监测",
+      "path": "intelligence",
+      "component": null,
+      "redirect": "/智能监测",
+      "hidden": null,
+      "children": [
+        {
+          "name": "设备管理",
+          "path": "/intelligence/equi",
+          "component": null,
+          "redirect": "/智能监测/设备管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "设备管理",
+              "path": "/intelligence/equipment",
+              "component": null,
+              "redirect": "/设备管理/设备管理",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "设备管理",
+                "icon": "hlrw",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "设备管理",
+            "icon": "hlrw",
+            "roles": null
+          }
+        },
+        {
+          "name": "报警管理",
+          "path": "/intelligence/warn",
+          "component": null,
+          "redirect": "/智能监测/报警管理",
+          "hidden": null,
+          "children": [
+            {
+              "name": "报警数据",
+              "path": "/intelligence/facility",
+              "component": null,
+              "redirect": "/报警管理/报警数据",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "报警数据",
+                "icon": "",
+                "roles": null
+              }
+            },
+            {
+              "name": "报警规则",
+              "path": "/intelligence/rule",
+              "component": null,
+              "redirect": "/报警管理/报警规则",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "报警规则",
+                "icon": "",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "报警管理",
+            "icon": "cwgl-sei",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "智能监测",
+        "icon": "hlrw",
+        "roles": null
+      }
+    },
+    {
+      "name": "个人中心",
+      "path": "userCenter",
+      "component": null,
+      "redirect": "/个人中心",
+      "hidden": null,
+      "children": [
+        {
+          "name": "个人中心",
+          "path": "/userCenter/userCenter/index",
+          "component": null,
+          "redirect": "/个人中心/个人中心",
+          "hidden": null,
+          "children": [
+            {
+              "name": "个人中心",
+              "path": "/userCenter/userCenter",
+              "component": null,
+              "redirect": "/个人中心/个人中心",
+              "hidden": null,
+              "children": null,
+              "meta": {
+                "title": "个人中心",
+                "icon": "dagl2beifen",
+                "roles": null
+              }
+            }
+          ],
+          "meta": {
+            "title": "个人中心",
+            "icon": "dagl2beifen",
+            "roles": null
+          }
+        }
+      ],
+      "meta": {
+        "title": "个人中心",
+        "icon": "dagl2beifen",
+        "roles": null
+      }
+    }
+  ],
+  "operationTime": null
+}
