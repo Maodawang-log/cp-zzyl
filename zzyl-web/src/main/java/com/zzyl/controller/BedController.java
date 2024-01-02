@@ -2,6 +2,7 @@ package com.zzyl.controller;
 
 import com.zzyl.base.ResponseResult;
 import com.zzyl.dto.BedDto;
+import com.zzyl.exception.BaseException;
 import com.zzyl.service.BedService;
 import com.zzyl.vo.BedVo;
 import io.swagger.annotations.Api;
@@ -32,15 +33,15 @@ public class BedController extends BaseController {
     //新增
     @ApiOperation("新增床位")
     @PostMapping("/create")
-    public ResponseResult createBed(@RequestBody BedDto bedDto){
+    public ResponseResult createBed(@RequestBody BedDto bedDto) {
         bedService.addBed(bedDto);
         return success();
     }
 
     @GetMapping("/read/{id}")
-    public ResponseResult<BedVo> readBed(@PathVariable("id") Long id){
+    public ResponseResult<BedVo> readBed(@PathVariable("id") Long id) {
 
-        if(true){
+        if (true) {
             throw new RuntimeException("就想报一个异常");
         }
 
@@ -48,14 +49,14 @@ public class BedController extends BaseController {
     }
 
     @PutMapping("/update")
-    public ResponseResult updateBed(@RequestBody BedDto bedDto){
+    public ResponseResult updateBed(@RequestBody BedDto bedDto) {
         bedService.updateBed(bedDto);
         return success();
     }
 
 
     @DeleteMapping("/delete/{id}")
-    public ResponseResult delBed(@PathVariable("id") Long id){
+    public ResponseResult delBed(@PathVariable("id") Long id) {
         bedService.delBed(id);
         return success();
     }

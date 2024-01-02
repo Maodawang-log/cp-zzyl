@@ -1,0 +1,1463 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": [
+    {
+      "name": "工作台",
+      "path": "dashboard",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "工作台",
+          "path": "/dashboard/base",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "工作台",
+              "path": "/dashboard/base",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "工作台的按钮",
+                  "path": "1231",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "来访管理",
+      "path": "appointment",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "预约来访",
+          "path": "appointment",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "预约登记",
+              "path": "/appointment/subscribe",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "到院",
+                  "path": "PUT/reservation/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "来访登记",
+              "path": "/appointment/comeVisit",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "入退管理",
+      "path": "enterQuit",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "入住管理",
+          "path": "/enterQuit/enterManage",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "入住办理",
+              "path": "/enterQuit/enterManage",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "发起入住申请",
+                  "path": "POST/checkIn/create",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "GET/checkIn",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "退住管理",
+          "path": "/enterQuit/quitManage",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "退住办理",
+              "path": "/enterQuit/quitManage",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "发起退住申请",
+                  "path": "POST/elder/create",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "GET/elder",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "在住管理",
+      "path": "liveIn",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "合同管理",
+          "path": "htgl",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "合同跟踪",
+              "path": "/liveIn/trackAfter",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "查看",
+                  "path": "GET/contract/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/contract/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "床位管理",
+          "path": "cwgl",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "床位房型",
+              "path": "/liveIn/houseType",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增楼层",
+                  "path": "POST/floor/add",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑楼层",
+                  "path": "PUT /floor/update",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除楼层",
+                  "path": "DELETE/floor/delete/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "新增房间",
+                  "path": "POST/room/add",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑房间",
+                  "path": "PUT/room/update",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除房间",
+                  "path": "DELETE/room/delete/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看房间",
+                  "path": "GET /room/get/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "新增床位",
+                  "path": "POST/bed/create",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑床位",
+                  "path": "PUT/bed/update",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除床位",
+                  "path": "DELETE/bed/delete/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "智能床位",
+              "path": "/liveIn/smartBed",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            },
+            {
+              "name": "房型设置",
+              "path": "/liveIn/houseSet",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增房型",
+                  "path": "POST/roomTypes",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/roomTypes/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PUT/roomTypes/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PUT/roomTypes/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PUT/roomTypes/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "请假管理",
+          "path": "qjgl",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "请假管理",
+              "path": "qjgl",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "服务管理",
+      "path": "serve",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "护理计划",
+          "path": "hljh-1",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "护理等级",
+              "path": "/serve/grade",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增护理等级",
+                  "path": "POST/nursingLevel/insert",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/nursingLevel/delete/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PUT /nursingLevel/update",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PUT/nursingLevel/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PUT/nursingLevel/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查询所有",
+                  "path": "GET/nursingLevel/listAll",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "分页查询",
+                  "path": "GET/nursingLevel/listByPage/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "护理计划",
+              "path": "/serve/nursePlan",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增护理计划",
+                  "path": "POST/nursing/plan",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/nursing/plan/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PUT/nursing/plan/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PUT/nursing/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "PUT/nursing/plan/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "计划列表",
+                  "path": "GET//nursing/plan/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "护理项目",
+              "path": "/serve/nurseProject",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增",
+                  "path": "POST/nursing_project",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/nursing_project/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PUT/nursing_project/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PUT/nursing_project/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查询",
+                  "path": "GET/nursing_project/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "护理任务",
+          "path": "hlrw",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "负责老人",
+              "path": "/serve/oldPeople",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            },
+            {
+              "name": "任务安排",
+              "path": "/serve/arrange",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "取消",
+                  "path": "PUT/nursingTask/cancel",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "GET/nursingTask",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "执行",
+                  "path": "PUT/nursingTask/do",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "改期",
+                  "path": "PUT/nursingTask/updateTime",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "订单管理",
+      "path": "order",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "订单管理",
+          "path": "order",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "订单管理",
+              "path": "/order/olist",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "取消",
+                  "path": "POST/orders/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "退款",
+                  "path": "POST /orders/refund",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "GET /orders",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "退款管理",
+              "path": "/order/refund",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "查看",
+                  "path": "GET/trade-common-feign/query-refund",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "财务管理",
+      "path": "finance",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "账单管理",
+          "path": "bill",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "入账列表",
+              "path": "/finance/enterAccount",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "生成月度账单",
+                  "path": "POST/bill",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "支付",
+                  "path": "PUT/bill",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "取消",
+                  "path": "PUT/bill/cancel/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "GET /bill/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "欠费老人",
+              "path": "/finance/arrearage",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "查看",
+                  "path": "GET/bill/arrears/",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "预存管理",
+          "path": "prestore",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "预缴款充值",
+              "path": "/finance/topUp",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "充值",
+                  "path": "POST/bill/prepaidRechargeRecord",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "余额查询",
+              "path": "/finance/balance",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "客户管理",
+      "path": "client",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "客户信息",
+          "path": "khxx",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "客户信息",
+              "path": "/client/list",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "权限管理",
+      "path": "permission",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "用户管理",
+          "path": "/permission/user",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "用户信息",
+              "path": "/permission/user",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增用户",
+                  "path": "PUT/user",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PATCH/user",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/user/remove/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "重置密码",
+                  "path": "POST/user/reset-passwords/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PATCH/user",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [
+                    {
+                      "name": "dept",
+                      "path": "dept",
+                      "component": null,
+                      "redirect": null,
+                      "hidden": null,
+                      "children": [],
+                      "meta": null
+                    }
+                  ],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PATCH/user",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "权限配置",
+          "path": "/permission/role",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "角色管理",
+              "path": "/permission/role",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增角色",
+                  "path": "PUT/role",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PATCH/role",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/role/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PATCH /role",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PATCH /role",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "菜单管理",
+              "path": "/permission/menu",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "菜单配置",
+                  "path": "PUT/resource",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "菜单删除",
+                  "path": "DELETE/resource/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "菜单禁用",
+                  "path": "POST/resource/enable",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "菜单启用",
+                  "path": "POST/resource/enable",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "菜单编辑",
+                  "path": "PATCH/resource",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "按钮配置",
+                  "path": "PUT/resource",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "按钮删除",
+                  "path": "DELETE/resource/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "按钮启用",
+                  "path": "POST/resource/enable",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "按钮禁用",
+                  "path": "POST/resource/enable",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "按钮编辑",
+                  "path": "PATCH/resource",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "菜单树形",
+                  "path": "POST/resource/tree",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "部门管理",
+              "path": "/permission/dept",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "删除部门",
+                  "path": "DELETE/dept/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "新增部门",
+                  "path": "PUT/dept",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PATCH/dept",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PATCH/dept",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PATCH/dept",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "部门树形",
+                  "path": "POST/dept/tree",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "职位管理",
+              "path": "/permission/post",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增职位",
+                  "path": "PUT/post",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PATCH/post",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE /post/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PATCH/post",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PATCH/post",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    },
+    {
+      "name": "智能监测",
+      "path": "intelligence",
+      "component": null,
+      "redirect": null,
+      "hidden": null,
+      "children": [
+        {
+          "name": "设备管理",
+          "path": "equi",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "设备管理",
+              "path": "/intelligence/equipment",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增设备",
+                  "path": "POST/iot/RegisterDevice",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/iot/DeleteDevice",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑设备",
+                  "path": "POST /iot/UpdateDevice",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "查看",
+                  "path": "POST/iot/QueryDeviceDetail",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        },
+        {
+          "name": "报警管理",
+          "path": "warn",
+          "component": null,
+          "redirect": null,
+          "hidden": null,
+          "children": [
+            {
+              "name": "报警数据",
+              "path": "/intelligence/facility",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "处理",
+                  "path": "PUT/device-data/update/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            },
+            {
+              "name": "报警规则",
+              "path": "/intelligence/rule",
+              "component": null,
+              "redirect": null,
+              "hidden": null,
+              "children": [
+                {
+                  "name": "新增报警规则",
+                  "path": "POST/alert-rule/create",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "删除",
+                  "path": "DELETE/alert-rule/delete/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "编辑",
+                  "path": "PUT /alert-rule/update/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "启用",
+                  "path": "PUT/alert-rule/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                },
+                {
+                  "name": "禁用",
+                  "path": "PUT/alert-rule/**",
+                  "component": null,
+                  "redirect": null,
+                  "hidden": null,
+                  "children": [],
+                  "meta": null
+                }
+              ],
+              "meta": null
+            }
+          ],
+          "meta": null
+        }
+      ],
+      "meta": null
+    }
+  ],
+  "operationTime": null
+}
