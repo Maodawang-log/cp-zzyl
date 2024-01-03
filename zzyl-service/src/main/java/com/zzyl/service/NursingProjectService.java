@@ -1,6 +1,8 @@
 package com.zzyl.service;
 
 import com.zzyl.base.PageResponse;
+import com.zzyl.dto.NursingProjectDto;
+import com.zzyl.vo.NursingProjectVo;
 
 public interface NursingProjectService {
 
@@ -13,4 +15,23 @@ public interface NursingProjectService {
      * @return
      */
     public PageResponse selectByPage(String name, Integer status, Integer pageNum, Integer pageSize);
+
+    /**
+     * 新增护理项目
+     * @param nursingProjectDto
+     */
+    public void add(NursingProjectDto nursingProjectDto);
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    public NursingProjectVo findById(Long id);
+
+    /**
+     * 修改护理项目
+     * @param nursingProjectDto
+     */
+    public void update(NursingProjectDto nursingProjectDto);
 }

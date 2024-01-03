@@ -41,8 +41,19 @@
 
     <update id="update" parameterType="com.zzyl.entity.NursingProject">
         UPDATE nursing_project
-        SET name = #{name}, order_no = #{orderNo}, unit = #{unit}, price = #{price}, image = #{image}, nursing_requirement = #{nursingRequirement},
-            status = #{status}, create_by = #{createBy}, update_by = #{updateBy}, remark = #{remark}, create_time = #{createTime}, update_time = #{updateTime}
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="orderNo != null">order_no = #{orderNo},</if>
+            <if test="unit != null">unit = #{unit},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="nursingRequirement != null">nursing_requirement = #{nursingRequirement},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </set>
         WHERE id = #{id}
     </update>
 
