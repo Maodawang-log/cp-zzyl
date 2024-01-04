@@ -44,4 +44,17 @@ public class NursingProjectController extends BaseController {
         nursingProjectService.update(nursingProjectDto);
         return success();
     }
+
+    @PutMapping("/{id}/status/{status}")
+    public ResponseResult isEnable(@PathVariable("id") Long id,@PathVariable("status") Integer status){
+        nursingProjectService.isEnable(id,status);
+        return success();
+    }
+
+    @DeleteMapping("/{id}")
+    @ApiOperation("删除护理项目信息")
+    public ResponseResult deleteById(@PathVariable("id") Long id) {
+        nursingProjectService.deleteById(id);
+        return ResponseResult.success();
+    }
 }

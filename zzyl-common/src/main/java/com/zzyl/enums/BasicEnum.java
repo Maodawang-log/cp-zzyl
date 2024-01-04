@@ -75,7 +75,8 @@ public enum BasicEnum implements IBasicEnum {
     RETREAT_SHOULD_IN_COST_TERM(1528, "请在费用期限内发起退住申请"),
     UPLOAD_FILE_EMPTY(1529, "上传图片不能为空"),
     DONE_ORDER_CANNOT_REFUND(1530, "已执行的订单不可退款"),
-    BED_INSERT_FAIL(1531,"床位新增失败");
+    BED_INSERT_FAIL(1531,"床位新增失败"),
+    ENABLED_CANNOT_DELETED(1532,"启用状态不能删除");
 
     /**
      * 编码

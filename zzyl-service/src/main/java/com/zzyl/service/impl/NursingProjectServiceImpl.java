@@ -6,8 +6,11 @@ import com.github.pagehelper.PageHelper;
 import com.zzyl.base.PageResponse;
 import com.zzyl.dto.NursingProjectDto;
 import com.zzyl.entity.NursingProject;
+import com.zzyl.enums.BasicEnum;
+import com.zzyl.exception.BaseException;
 import com.zzyl.mapper.NursingProjectMapper;
 import com.zzyl.service.NursingProjectService;
+import com.zzyl.utils.ObjectUtil;
 import com.zzyl.vo.NursingProjectVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -66,5 +69,28 @@ public class NursingProjectServiceImpl implements NursingProjectService {
     public void update(NursingProjectDto nursingProjectDto) {
         NursingProject nursingProject = BeanUtil.toBean(nursingProjectDto, NursingProject.class);
         nursingProjectMapper.update(nursingProject);
+    }
+
+    /**
+     * 启用或禁用
+     * @param id
+     * @param status
+     */
+    @Override
+    public void isEnable(Long id, Integer status) {
+        nursingProjectMapper.isEnable(id,status);
+    }
+
+    /**
+     * 删除护理项目
+     * @param id
+     */
+    @Override
+    public void deleteById(Long id) {
+        NursingProject nursingProject = nursingProjectMapper.findById(id);
+        if(ObjectUtil.isNotEmpty(nursingProject) && nursingProject.getStatus().equals(1)){
+            throw new BaseException(BasicEnum.ENABLED_CANNOT_DELETED);
+        }
+        nursingProjectMapper.deleteById(id);
     }
 }

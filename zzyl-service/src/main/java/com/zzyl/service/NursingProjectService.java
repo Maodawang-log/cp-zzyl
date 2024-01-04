@@ -34,4 +34,17 @@ public interface NursingProjectService {
      * @param nursingProjectDto
      */
     public void update(NursingProjectDto nursingProjectDto);
+
+    /**
+     * 启用或禁用
+     * @param id
+     * @param status
+     */
+    public void isEnable(Long id,Integer status);
+
+    /**
+     * 删除护理项目
+     * @param id
+     */
+    void deleteById(Long id);
 }
