@@ -15,9 +15,10 @@ import com.zzyl.vo.NursingProjectVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class NursingProjectServiceImpl implements NursingProjectService {
-
 
     @Autowired
     private NursingProjectMapper nursingProjectMapper;
@@ -92,5 +93,10 @@ public class NursingProjectServiceImpl implements NursingProjectService {
             throw new BaseException(BasicEnum.ENABLED_CANNOT_DELETED);
         }
         nursingProjectMapper.deleteById(id);
+    }
+
+    @Override
+    public List<NursingProjectVo> selectAll() {
+        return nursingProjectMapper.selectAll();
     }
 }

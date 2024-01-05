@@ -32,6 +32,7 @@
         <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
         <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
         <result column="creator" property="creator" jdbcType="VARCHAR" />
+        <result column="count" property="count"></result>
     </resultMap>
 
     <insert id="insert" parameterType="com.zzyl.entity.NursingProject">
@@ -68,7 +69,10 @@
     </select>
 
     <select id="selectByPage" resultMap="BaseResultVoMap">
-        select np.*,su.real_name creator  from nursing_project np left join sys_user su on np.create_by = su.id
+        select np.*, su.real_name creator,count(npp.id) count
+        from nursing_project np
+        left join sys_user su on np.create_by = su.id
+        left join nursing_project_plan npp on np.id = npp.project_id
         <where>
             <if test="name != null and name != ''">
                 and np.name like concat('%',#{name},'%')
@@ -77,6 +81,7 @@
                 and np.status = #{status}
             </if>
         </where>
+        group by np.id
         order by np.order_no, np.create_time desc
 
     </select>

@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.zzyl.entity.NursingProject;
 import com.zzyl.vo.NursingProjectVo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
@@ -22,4 +23,7 @@ public interface NursingProjectMapper {
 
     @Update("update nursing_project set status = #{status} where id = #{id}")
     void isEnable(Long id, Integer status);
+
+    @Select("select * from nursing_project")
+    List<NursingProjectVo> selectAll();
 }

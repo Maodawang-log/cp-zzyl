@@ -4,6 +4,8 @@ import com.zzyl.base.PageResponse;
 import com.zzyl.dto.NursingProjectDto;
 import com.zzyl.vo.NursingProjectVo;
 
+import java.util.List;
+
 public interface NursingProjectService {
 
     /**
@@ -47,4 +49,6 @@ public interface NursingProjectService {
      * @param id
      */
     void deleteById(Long id);
+
+    List<NursingProjectVo> selectAll();
 }

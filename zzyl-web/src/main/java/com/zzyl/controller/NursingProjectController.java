@@ -12,6 +12,8 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/nursing_project")
 @Api(tags = "护理项目相关接口")
@@ -56,5 +58,10 @@ public class NursingProjectController extends BaseController {
     public ResponseResult deleteById(@PathVariable("id") Long id) {
         nursingProjectService.deleteById(id);
         return ResponseResult.success();
+    }
+
+    @GetMapping("/all")
+    public ResponseResult<List<NursingProjectVo>> getAll(){
+        return success(nursingProjectService.selectAll());
     }
 }
