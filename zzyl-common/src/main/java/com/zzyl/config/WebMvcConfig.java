@@ -7,10 +7,13 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalTimeSerializer;
+import com.zzyl.intercept.UserInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -26,6 +29,22 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 @ComponentScan("springfox.documentation.swagger.web")
 public class WebMvcConfig implements WebMvcConfigurer {
+
+    @Autowired
+    private UserInterceptor userInterceptor;
+
+    //拦截的时候过滤掉swagger相关路径和登录相关接口
+    private static final String[] EXCLUDE_PATH_PATTERNS = new String[]{"/swagger-ui.html",
+            "/webjars/**",
+            "/swagger-resources",
+            "/v2/api-docs",
+            // 登录接口
+            "/customer/user/login"};
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(userInterceptor).excludePathPatterns(EXCLUDE_PATH_PATTERNS).addPathPatterns("/customer/**");
+    }
 
     /**
      * 资源路径 映射

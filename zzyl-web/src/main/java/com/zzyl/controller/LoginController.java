@@ -1,22 +1,19 @@
 package com.zzyl.controller;
 
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.io.resource.ClassPathResource;
-import com.google.common.collect.Lists;
+import cn.hutool.core.bean.BeanUtil;
 import com.zzyl.base.ResponseResult;
-import com.zzyl.constant.SuperConstant;
 import com.zzyl.dto.LoginDto;
-import com.zzyl.enums.BasicEnum;
-import com.zzyl.exception.BaseException;
+import com.zzyl.mapper.UserMapper;
 import com.zzyl.utils.JwtUtil;
-import com.zzyl.utils.UserThreadLocal;
 import com.zzyl.vo.UserVo;
-import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.io.*;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author sjqn
@@ -26,14 +23,22 @@ import java.util.stream.Collectors;
 public class LoginController {
 
 
+    @Autowired
+    private UserMapper userMapper;
+
     @PostMapping("/security/login")
     public ResponseResult login(@RequestBody LoginDto loginDto){
 
-        UserVo userVo = new UserVo();
+        /*UserVo userVo = new UserVo();
 
         Map<String,Object> map = new HashMap<>();
         map.put("username",loginDto.getUsername());
 
+        userVo.setUserToken(JwtUtil.createJWT("itheima",600000,map));
+        return ResponseResult.success(userVo);*/
+        UserVo userVo = userMapper.selectByName(loginDto.getUsername());
+        Map<String,Object> map = new HashMap<>();
+        map.put("username",loginDto.getUsername());
         userVo.setUserToken(JwtUtil.createJWT("itheima",600000,map));
         return ResponseResult.success(userVo);
     }
