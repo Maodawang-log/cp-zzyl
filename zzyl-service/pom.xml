@@ -30,6 +30,11 @@
             <groupId>com.zzyl</groupId>
             <artifactId>zzyl-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.zzyl</groupId>
+            <artifactId>zzyl-security</artifactId>
+        </dependency>
+
 
     </dependencies>
 

@@ -13,6 +13,7 @@
         <module>zzyl-common</module>
         <module>zzyl-service</module>
         <module>zzyl-web</module>
+        <module>zzyl-security</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -187,6 +188,11 @@
             <dependency>
                 <groupId>com.zzyl</groupId>
                 <artifactId>zzyl-service</artifactId>
+                <version>${retirement.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zzyl</groupId>
+                <artifactId>zzyl-security</artifactId>
                 <version>${retirement.version}</version>
             </dependency>
             <!-- mysql驱动依赖 -->
