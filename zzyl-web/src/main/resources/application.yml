@@ -25,9 +25,9 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.200.146:3306/zzyl?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://localhost:3306/zzyl?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
       username: root
-      password: heima123
+      password: ENC(TKiI5qeCTCepRTioxFvTrcifvVWMFX1/UbqmM43dQqbAN0AKyrBKBMXCdrKUCuoX)
 # MyBatis配置
 mybatis:
   #mapper配置文件
@@ -60,10 +60,10 @@ zzyl:
       base64-encoded-secret-key: $2a$10$PVtHnkj86mJgf6li/yron.LRx/cQAlaiZkBJ9BeogCNTryXJRT1YC
       ttl: 3600000
     oss:
-      endpoint: oss-cn-beijing.aliyuncs.com
-      accessKeyId: LTAI5tJoq4Sw9aHeZYZqdVyh
-      accessKeySecret: K3VpgTrPoFH5oYkfOZXlS7zahRAoqe
-      bucketName: itheim
+      endpoint: oss-cn-hangzhou.aliyuncs.com
+      accessKeyId: ENC(Tqs0J9tMBprU1vAjXmoxK7hmrklHhOchwxWIlG002/ItB39r02eq/9j44hwlEwuHRdCuVnj5fVM+cmf3cL8QTg==)
+      accessKeySecret: ENC(Bqfwgp0hKJyE6wpNsBPVR8mM0q1TEmiXrWb4B9SAwUeEbHNUaQV6LhItDjtsSq33XO4AXSaYUu/ZakXIzrL/NQ==)
+      bucketName: java-li-web
   wechat:
-    appId: wxa54e0997e8b6649e
-    appSecret: 9e4b693aa8cee71a9077e15dcac30b52
+    appId: ENC(bTkbTDjlbTqdSmd5E29+tywVCoEu7ysJUrq2BHD7ciwBjT7J64By8N1ymvvjV2bUo6OCBhd1pP3ksHr5TDMStA==)
+    appSecret: ENC(cnwB1x56V42SXYpRQmRI+NNnVV4ucCLl+1zO4jbG0t0byLyMqTuBNpogMSMoOTK4pz6oTOqo8Zjn7E+PGa17rF+7vA1iCWtwEvdT+Ae056k=)

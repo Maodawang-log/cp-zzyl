@@ -47,6 +47,8 @@
         <xxl-job.version>2.3.0</xxl-job.version>
         <!--orika 拷贝工具 -->
         <orika-core.version>1.5.4</orika-core.version>
+        <!--加密工具-->
+        <jasypt>3.0.5</jasypt>
     </properties>
 
     <!-- 依赖声明 -->
@@ -203,7 +205,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>${jasypt}</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <!--jdk插件-->
