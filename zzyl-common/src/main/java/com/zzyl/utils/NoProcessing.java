@@ -16,7 +16,7 @@ public class NoProcessing {
      * @return
  * @return: java.lang.String
      */
-    public static String processString(String input) {
+/*    public static String processString(String input) {
         int step = input.length() / 3;
         for (int i =0;i<step;i++ ){
             String targetString = input.substring(input.length()-3,input.length());
@@ -27,6 +27,10 @@ public class NoProcessing {
             }
         }
         return input;
+    }*/
+    //根本不需要这么复杂的判断，直接一行代码搞定
+    public static String processString(String input) {
+        return input.replaceAll("(000)+$", "");
     }
 
     public static void main(String[] args) {
@@ -43,7 +47,7 @@ public class NoProcessing {
      * @return
      * @return: java.lang.String
      */
-    public static String createNo(String input,boolean peerNode) {
+    /*public static String createNo(String input,boolean peerNode) {
         int step = input.length() / 3;
         int supplement = 0;
         for (int i =0;i<step;i++ ){
@@ -67,7 +71,29 @@ public class NoProcessing {
             }
         }
         return input;
+    }*/
+    public static String createNo(String input, boolean peerNode) {
+        // 使用正则表达式一次性移除尾部的连续 "000"
+        String processedInput = input.replaceAll("(000)+$", "");
+
+        // 根据 peerNode 来生成新的编号
+        if (peerNode) {
+            // 生成同级节点编号（数字加1）
+            processedInput = String.valueOf(Long.parseLong(processedInput) + 1L);
+        } else {
+            // 生成下属节点编号，末尾加 "001"
+            processedInput = processedInput + "001";
+        }
+
+        // 根据删除的 "000" 数量来补回相应的 "000"
+        int zeroesToAdd = (input.length() - processedInput.length()) / 3;
+        for (int i = 0; i < zeroesToAdd; i++) {
+            processedInput = processedInput + "000";
+        }
+
+        return processedInput;
     }
+
 
 
 
