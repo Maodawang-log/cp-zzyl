@@ -1,10 +1,15 @@
 package com.zzyl.mapper;
 
+import com.github.pagehelper.Page;
+import com.zzyl.dto.RoleDto;
 import com.zzyl.entity.Role;
+import com.zzyl.vo.RoleVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface RoleMapper {
@@ -28,4 +33,9 @@ public interface RoleMapper {
      * @author hewei
      */
     int batchInsert(@Param("list") List<Role> list);
+
+    Page<List<Role>> selectPage(RoleDto roleDto);
+
+    @Select("select * from sys_role")
+    Set<RoleVo> roleFindAll();
 }

@@ -175,4 +175,16 @@
        (#{item.roleName,jdbcType=VARCHAR}, #{item.label,jdbcType=VARCHAR}, #{item.sortNo,jdbcType=INTEGER}, #{item.dataState,jdbcType=CHAR}, #{item.createTime,jdbcType=TIMESTAMP}, #{item.updateTime,jdbcType=TIMESTAMP}, #{item.remark,jdbcType=VARCHAR}, #{item.createBy,jdbcType=BIGINT}, #{item.updateBy,jdbcType=BIGINT}, #{item.dataScope,jdbcType=CHAR})
     </foreach>
   </insert>
+
+  <select id="selectPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from sys_role
+    <where>
+      <if test="roleName!=null and roleName!=''">
+        and role_name like concat('%',#{roleName},'%')
+      </if>
+    </where>
+    order by create_time desc
+  </select>
 </mapper>

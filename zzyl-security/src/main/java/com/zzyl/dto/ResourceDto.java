@@ -9,6 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import java.util.Objects;
+
 /**
  * 资源DTO
  */
@@ -68,5 +70,10 @@ public class ResourceDto extends BaseDto {
         this.roleId = roleId;
         this.level = level;
         this.dataState = dataState;
+    }
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(super.hashCode(), getParentResourceNo(), getResourceType(),getDataState());
+        return result;
     }
 }

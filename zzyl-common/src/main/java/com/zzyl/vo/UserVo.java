@@ -78,4 +78,10 @@ public class UserVo extends BaseVo {
 
     private String dataState;
 
+    @ApiModelProperty(value = "职位名称")
+    private String postName;
+
+    @ApiModelProperty(value = "部门名称")
+    private String deptName;
+
 }

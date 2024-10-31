@@ -1,6 +1,7 @@
 package com.zzyl.mapper;
 
 import com.zzyl.entity.UserRole;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -29,4 +30,7 @@ public interface UserRoleMapper {
      * @author hewei
      */
     int batchInsert(@Param("list") List<UserRole> list);
+
+    @Delete("delete from sys_user_role where user_id = #{id}")
+    boolean deleteUserRoleByUserId(Long id);
 }
